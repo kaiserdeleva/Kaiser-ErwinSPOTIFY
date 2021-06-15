@@ -1,0 +1,340 @@
+*{
+    scroll-behavior: smooth;
+}
+@media only screen and (max-width: 1178px) {
+    body {
+      text-align: center;
+      background: #e7dec8;
+    }
+}
+body {
+    background: rgb(167, 159, 159);
+}
+:root {
+    --hero-title: 'Poppins', sans-serif;
+    --default-text: 'Montserrat', sans-serif;
+}
+
+/*font styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.spotify {
+    height: 12%;
+    width: 12%;
+    border-radius: 50%;
+}
+footer {
+    text-align: center;
+    color: honeydew;
+    background-color: rgb(24, 23, 23);
+ }
+
+
+/* ----------------------- Sidebar------------------------------ */
+
+
+
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+html {
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+.sidebar{ 
+    width:220px;  
+    background-color:#000;
+    transition: all 0.5s  ease-in-out; 
+    margin-top: 4%;
+    position: fixed;
+}
+.bg-defoult{
+    background-color:#222;
+}
+.sidebar ul{ 
+    list-style:none; 
+    margin:0px;
+    padding:0px; 
+}
+.sidebar li a,.sidebar li a.collapsed.active{ display:block; 
+    padding:8px 12px;
+     color:#fff;
+     border-left:0px solid #dedede;  
+     text-decoration:none
+    }
+.sidebar li a.active{
+    background-color:#000;
+    border-left:5px solid #dedede; 
+    transition: all 0.5s  ease-in-out
+}
+.sidebar li a:hover{
+    background-color:#000 !important;
+}
+.sidebar li a i{
+     padding-right:5px;
+    }
+.sidebar ul li .sub-menu li a{ 
+    position:relative
+}
+/* -----------------------strain---------------------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .strain {
+    width: 155px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    -webkit-animation-name: rotate-strain;
+            animation-name: rotate-strain;
+    -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .strain:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #13b6e2;
+    left: 0;
+    margin-top: -9px;
+    margin-left: -9px;
+    -webkit-animation-name: strain-size-left;
+            animation-name: strain-size-left;
+    -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .strain:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #13b6e2;
+    right: 0;
+    margin-top: -9px;
+    margin-right: -9px;
+    -webkit-animation-name: strain-size-right;
+            animation-name: strain-size-right;
+    -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .strain:nth-child(1), .strain:nth-child(1):before, .strain:nth-child(1):after {
+    -webkit-animation-delay: 0.15s;
+            animation-delay: 0.15s;
+  }
+  .strain:nth-child(2), .strain:nth-child(2):before, .strain:nth-child(2):after {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .strain:nth-child(3), .strain:nth-child(3):before, .strain:nth-child(3):after {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .strain:nth-child(4), .strain:nth-child(4):before, .strain:nth-child(4):after {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .strain:nth-child(5), .strain:nth-child(5):before, .strain:nth-child(5):after {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
+  .strain:nth-child(6), .strain:nth-child(6):before, .strain:nth-child(6):after {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  .strain:nth-child(7), .strain:nth-child(7):before, .strain:nth-child(7):after {
+    -webkit-animation-delay: 1.05s;
+            animation-delay: 1.05s;
+  }
+  .strain:nth-child(8), .strain:nth-child(8):before, .strain:nth-child(8):after {
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+  }
+  .strain:nth-child(9), .strain:nth-child(9):before, .strain:nth-child(9):after {
+    -webkit-animation-delay: 1.35s;
+            animation-delay: 1.35s;
+  }
+  .strain:nth-child(10), .strain:nth-child(10):before, .strain:nth-child(10):after {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
+  .strain:nth-child(11), .strain:nth-child(11):before, .strain:nth-child(11):after {
+    -webkit-animation-delay: 1.65s;
+            animation-delay: 1.65s;
+  }
+  .strain:nth-child(12), .strain:nth-child(12):before, .strain:nth-child(12):after {
+    -webkit-animation-delay: 1.8s;
+            animation-delay: 1.8s;
+  }
+  
+  @-webkit-keyframes rotate-strain {
+    0% {
+      width: 155px;
+    }
+    25% {
+      width: 0;
+    }
+    50% {
+      width: 155px;
+    }
+    75% {
+      width: 0;
+    }
+    100% {
+      width: 155px;
+    }
+  }
+  
+  @keyframes rotate-strain {
+    0% {
+      width: 155px;
+    }
+    25% {
+      width: 0;
+    }
+    50% {
+      width: 155px;
+    }
+    75% {
+      width: 0;
+    }
+    100% {
+      width: 155px;
+    }
+  }
+  @-webkit-keyframes strain-size-left {
+    0% {
+      transform: scale(1) translateX(0px);
+    }
+    25% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1) translateX(155px);
+    }
+    75% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
+  @keyframes strain-size-left {
+    0% {
+      transform: scale(1) translateX(0px);
+    }
+    25% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1) translateX(155px);
+    }
+    75% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
+  @-webkit-keyframes strain-size-right {
+    0% {
+      transform: scale(1) translateX(0px);
+    }
+    25% {
+      transform: scale(1.5);
+    }
+    50% {
+      transform: scale(1) translateX(-155px);
+    }
+    75% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
+  @keyframes strain-size-right {
+    0% {
+      transform: scale(1) translateX(0px);
+    }
+    25% {
+      transform: scale(1.5);
+    }
+    50% {
+      transform: scale(1) translateX(-155px);
+    }
+    75% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
+
+  /* ---------------------------end of left bar and start of right bar------------------- */
+
+  .container-fluid1{ 
+    width:250px;  
+    background-color:#222;
+    transition: all 0.5s  ease-in-out; 
+    margin-top: 4%;
+    position: fixed;
+    margin-left: 79.5%;
+}
+.activity, .connect{ 
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.btn{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+}
+.paragraph{ 
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* ---------------------------cards---------------------- */
+
+.container-fluid2{ 
+  width: 50%;
+  margin-top: 4%;
+  margin-left: 23%;
+}

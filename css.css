@@ -1,0 +1,41 @@
+*{
+    scroll-behavior: smooth;
+}
+body {
+    background: rgb(167, 159, 159);
+}
+:root {
+    --hero-title: 'Poppins', sans-serif;
+    --default-text: 'Montserrat', sans-serif;
+}
+
+/*font styles*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.spotify {
+    height: 65%;
+    width: 70%;
+    border-radius: 5%;
+}
+
+.hero {
+    padding-top: 7%;
+    width: 100%;
+    align-items: center;
+}
+footer {
+   text-align: center;
+   color: honeydew;
+   background-color: rgb(24, 23, 23);
+}
+@media only screen and (max-width: 1178px) {
+    body {
+      text-align: center;
+      background: #e7dec8;
+    }
+}
