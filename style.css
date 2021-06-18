@@ -46,7 +46,7 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 .sidebar{ 
-    width:220px;  
+  width:250px;  
     background-color:#000;
     transition: all 0.5s  ease-in-out; 
     margin-top: 4%;
@@ -336,5 +336,31 @@ html {
 .container-fluid2{ 
   width: 50%;
   margin-top: 4%;
-  margin-left: 23%;
+  margin-left: 25%;
 }
+
+/* /////////////////////search */
+.form-search{ 
+  width: 50%;
+  margin-top: 0%;
+  margin-left: 25%;
+  margin-bottom: 2%;
+}
+.singers{ 
+  margin-left: 25%;;
+   width: 50%;
+   height: 50%;
+   align-items: center;
+}
+.container-fluid5{ 
+    padding: 3% 15%;
+    background-color: black;
+}
+.info h3{
+  padding-left: 24.5%;
+  color: white;
+ }
+ .info a{
+  padding-left: 24.5%;
+  color: white;
+ }
