@@ -27,10 +27,81 @@
 
     <!-- REACT CONTENT LOCATION -->
     <div id="app">React has not rendered yet.</div>
-    <script type="text/babel" src="index.js">
+    <script type="text/babel" src="index.js"></script>
 
+
+    <div class="container-fluid5">
+    <form class="form-search" id="input" onsubmit="return false">
+        <div class="input-group">
+        <input class="form-control form-control-md search-input"  size="50" type="text" placeholder="Search" id="search" aria-label="Search"/>
+        <button class="btn btn-md btn-success" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        </form>
+
+            
+        <div class="singers">
+            <img src="images/bruno.jpeg" class="singers" alt="">
+            <div class="info">
+                <h3>Bruno Mars</h3>
+                <a href="#Brunomars">Song list</a>
+            </div>
+        </div>
+
+        <div class="singers">
+            <img src="images/ed.jpeg" class="singers" alt="">
+            <div class="info">
+                <h3>Ed Sheeran</h3>
+                <a href="#edsheeran">Song list</a>
+            </div>
+        </div>
+
+        <div class="singers">
+            <img src="images/boyce.jpeg" class="singers"alt="">
+            <div class="info">
+                <h3>Boyce Avenue</h3>
+                <a href="#boyceavenue">Song list</a>
+            </div>
+        </div>
+
+        <div class="singers">
+            <img src="images/maroon5.jpeg" class="singers"alt="">
+            <div class="info">
+                <h3>Maroon5</h3>
+                <a href="#Mfive">Song list</a>
+            </div>
+        </div>
+
+        <div class="singers">
+            <img src="images/shawn.jpeg" class="singers"alt="">
+            <div class="info">
+                <h3>Shawn Mendes</h3>
+                <a href="#Mendes">Song list</a>
+            </div>
+        </div>
+        
+
+            </div>
+
+
+    <script>
+const search = document.getElementById("search");
+const animeList = document.querySelectorAll(".info h3");
+
+search.addEventListener("keyup", filterAnime);
+
+function filterAnime(e) {
+    const text = e.target.value.toLowerCase();
+    // console.log(productName[0]);
+    animeList.forEach(function(anime) {
+        const item = anime.firstChild.textContent;
+        if (item.toLowerCase().indexOf(text) != -1) {
+            anime.parentElement.parentElement.style.display = "block"
+        } else {
+            anime.parentElement.parentElement.style.display = "none"
+        }
+    })
+}
     </script>
-
 </body>
  <footer>
     Copyright &copy; Kaiser Gabrielle S. de Leva & Jan Erwin P. Batac 2021. All rights reserved.
