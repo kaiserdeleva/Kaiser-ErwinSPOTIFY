@@ -1,6 +1,6 @@
 
 function Navigation() {  return (
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id="top">
         <a class="navbar-brand"><img src="icon.png" class="spotify"/></a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,8 +8,12 @@ function Navigation() {  return (
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link mr-2" href="">🏠Home</a>
+                    <a class="nav-link mr-2" href="#top">🏠Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="#input">🔎Search</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mr-2" href="#courses">📚Your Library</a>
@@ -30,6 +34,10 @@ function Navigation() {  return (
                                 )
                                 }
 // --------------------------end of navigation----------------------
+
+
+
+
 
 function SideBar() {  return (
 <div class="sidebar left ">
@@ -89,9 +97,9 @@ function SideBarRight() {  return (
 
     function Card(props){
         return(
-            <div id="courses" class="plain-color">
+          
+            
             <div class="container-fluid2">
-                
             <div class="row">
   <div class="col-sm-6">
     <div class="card">
@@ -115,7 +123,7 @@ function SideBarRight() {  return (
   </div>
 </div>
  </div>
- </div>
+ 
            
         )
       }
@@ -227,9 +235,3 @@ ReactDOM.render(
 </div>,
   destination
 );
-
-$(document).ready(function(){
-    $('button').click(function(){
-        $('.sidebar').toggleClass('fliph');
-    });   
- });
